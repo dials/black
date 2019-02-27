@@ -25,10 +25,9 @@ def patched_main():
             have_black = False
         if have_black:
             # guess what - there is!
-            print("RUNNING", ["python3", "-m", "black"], sys.argv)
             sys.exit(
                 procrunner.run(
-                    ["python3", "-m", "black"] + sys.argv,
+                    ["python3", "-m", "black"] + sys.argv[1:],
                     environment_override=clean_env,
                 )["exitcode"]
             )
