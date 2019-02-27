@@ -11,7 +11,7 @@ def patched_main():
         # so we're in python2 and can't run black.
         # but maybe there is a python3 out there that can.
         import procrunner
-        cleanenv = {'PYTHONPATH': "", "LD_LIBRARY_PATH": ""}
+        clean_env = {'PYTHONPATH': "", "LD_LIBRARY_PATH": ""}
         if not procrunner.run(["python3", "-c", "import black"], print_stderr=False, print_stdout=False, environment_override=clean_env)['exitcode']:
             # guess what - there is!
             print("RUNNING", ["python3", "-m", "black"], sys.argv)
