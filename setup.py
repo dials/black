@@ -14,7 +14,7 @@ setup(
     packages=["blib2to3", "blib2to3.pgen2"],
     package_data={"blib2to3": ["*.txt"]},
     zip_safe=False,
-    install_requires=["click>=6.5", "attrs>=18.1.0", "appdirs", "toml>=0.9.4"],
+    install_requires=["click>=6.5", "attrs>=18.1.0", "appdirs", "toml>=0.9.4", "procrunner"],
     extras_require={"d": ["aiohttp>=3.3.2", "aiohttp-cors"]},
     test_suite="tests.test_black",
     classifiers=[
