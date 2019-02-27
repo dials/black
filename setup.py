@@ -32,8 +32,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "black=black:patched_main",
-            "blackd=blackd:patched_main [d]",
+            "black=black_redirect:patched_main",
         ]
     },
 )
