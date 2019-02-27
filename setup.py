@@ -10,7 +10,7 @@ setup(
     author_email="lukasz@langa.pl",
     url="https://github.com/ambv/black",
     license="MIT",
-    py_modules=["black", "blackd"],
+    py_modules=["black", "blackd", "black_redirect"],
     packages=["blib2to3", "blib2to3.pgen2"],
     package_data={"blib2to3": ["*.txt"]},
     zip_safe=False,
